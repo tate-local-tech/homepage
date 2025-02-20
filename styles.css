@@ -1,0 +1,27 @@
+body {
+  font-family: "Atkinson Hyperlegible Next", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer-flag {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.footer-flag img {
+  margin: 0 5px 8px;
+}
+
+.footer-flag p {
+  font-weight: 700;
+  font-size: 0.9em;
+}
