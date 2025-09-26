@@ -12,16 +12,6 @@ h1 {
 
 .footer-flag {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  width: 100px;
-}
-
-.footer-flag img {
-  margin: 0 5px 8px;
-}
-
-.footer-flag p {
-  font-weight: 700;
-  font-size: 0.9em;
+  width: 110px;
+  display: inline-block;
 }
