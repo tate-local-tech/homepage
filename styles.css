@@ -46,6 +46,8 @@ h1,h2 {
 
 .service-card i {
   font-size: 2rem;
+  --fa-primary-color: #000000;
+  --fa-secondary-color: #FFFFFF;
 }
 
 footer {
