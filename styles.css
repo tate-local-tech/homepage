@@ -1,27 +1,10 @@
-/* :root {
-  --color-primary: #484aaa;
-  --color-secondary: #979bf9;
-  --color-surface: #ddc2f2;
-  --color-surface-light: #f7ebf9;
-  --color-accent: #9847b4;
-} */
-
-
 body {
-  /* font-family: "Atkinson Hyperlegible Next", serif; */
-  font-optical-sizing: auto;
-  /* font-weight: 200; */
-  font-style: normal;
   background-color: #000427;
-}
-
-.container-fluid {
 }
 
 .wallpaper {
   padding-top: 60vh;
-
-  background: url(assets/wallpaper.jpg);
+  background-image: url(assets/wallpaper.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -29,7 +12,6 @@ body {
 h1 {
   font-weight: 700;
   letter-spacing: 1px;
-  /* font-family: 'Libre Bodoni', serif; */
 }
 
 h1,h2 {
