@@ -47,3 +47,7 @@ h1,h2 {
 .service-card i {
   font-size: 2rem;
 }
+
+footer {
+  margin-right: 100px;
+}
