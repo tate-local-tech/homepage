@@ -49,5 +49,5 @@ h1,h2 {
 }
 
 footer {
-  margin-right: 100px;
+  max-width: 500px;
 }
