@@ -31,16 +31,72 @@ h1,h2 {
   background-color: rgba(0,0,0,0.5);
 }
 
-.service-pill i {
-  font-size: 2rem;
-  --fa-primary-color: #ffffff;
-  --fa-secondary-color: #FFFFFF;
-}
-
 .service-pill.active i {
   --fa-primary-color: #000000;
 }
 
 footer {
   max-width: 500px;
+}
+
+.badged-icon .badge {
+  font-size: 1.2em;
+}
+
+.provider .progress {
+  height: 8px;
+  margin-top: 15px;
+}
+
+img.provider-gmail {
+  height: 60px;
+}
+
+img.provider-fastmail {
+  height: 60px;
+}
+
+img.provider-protonmail {
+  height: 40px;
+  margin: 10px 0;
+}
+
+.provider-feature {
+  font-size: 1.2em;
+  margin-top: 12px;
+}
+
+.fa-color-primary {
+  --fa-primary-color: var(--bs-primary);
+  --fa-secondary-color: var(--bs-primary);
+}
+
+.fa-color-secondary {
+  --fa-primary-color: var(--bs-secondary);
+  --fa-secondary-color: var(--bs-secondary);
+}
+
+.fa-color-success {
+  --fa-primary-color: var(--bs-success);
+  --fa-secondary-color: var(--bs-success);
+}
+
+.fa-color-info {
+  --fa-primary-color: var(--bs-info);
+  --fa-secondary-color: var(--bs-info);
+}
+
+.fa-color-warning {
+  --fa-primary-color: var(--bs-warning);
+  --fa-secondary-color: var(--bs-warning);
+}
+
+.fa-color-danger {
+  --fa-primary-color: var(--bs-danger);
+  --fa-secondary-color: var(--bs-danger);
+}
+
+.fa-color-light {
+  --fa-primary-color: var(--bs-light);
+  --fa-secondary-color: var(--bs-light);
 }

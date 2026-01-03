@@ -15,12 +15,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/dfc66627a9.js" crossorigin="anonymous"></script>
 
   <link href="styles.css" rel="stylesheet">
-  <script src="script.js" type="text/javascript"></script>
 </head>
 <body data-bs-theme="dark">
 
@@ -32,22 +32,22 @@
     </a>
     <a href="tel:+14044857525" class="btn btn-primary rounded-pill px-4 fs-4">404-485-7525</a>
 
-    <ul class="nav nav-pills mt-4 mb-2 d-flex justify-content-between" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills mt-4 mb-2 gx-4 d-flex justify-content-between" id="pills-tab" role="tablist">
       <li class="nav-item mb-2 d-flex flex-fill" role="presentation">
         <button class="nav-link active text-center service-pill w-100 py-3" id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button" role="tab" aria-controls="pills-web" aria-selected="true">
-          <i class="fa-sharp-duotone fa-regular fa-globe-pointer"></i>
+          <i class="fa-sharp-duotone fa-regular fa-globe-pointer fa-2x fa-color-light"></i>
           <div class="mt-2 fs-5">Web Design Services</div>
         </button>
       </li>
       <li class="nav-item mb-2 d-flex flex-fill" role="presentation">
         <button class="nav-link service-pill py-3 w-100" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email" aria-selected="false">
-          <i class="fa-sharp-duotone fa-regular fa-mailbox-open-letter"></i>
+          <i class="fa-sharp-duotone fa-regular fa-mailbox-open-letter fa-2x fa-color-light"></i>
           <div class="mt-2 fs-5">Business Email Hosting</div>
         </button>
       </li>
       <li class="nav-item mb-2 d-flex flex-fill" role="presentation">
         <button class="nav-link service-pill py-3 w-100" id="pills-consulting-tab" data-bs-toggle="pill" data-bs-target="#pills-consulting" type="button" role="tab" aria-controls="pills-consulting" aria-selected="false">
-          <i class="fa-sharp-duotone fa-regular fa-server"></i>
+          <i class="fa-sharp-duotone fa-regular fa-server fa-2x fa-color-light"></i>
           <div class="mt-2 fs-5">Software Consulting</div>
         </button>
       </li>
@@ -86,20 +86,256 @@
         </div>
       </div>
       <div class="tab-pane fade" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabindex="0">
-        <div class="card border-warning mb-3" style="max-width: 36rem;">
+        <!-- <div class="card border-warning mb-3" style="max-width: 36rem;">
           <div class="card-header"><i>Pardon Our Dust...</i></div>
           <div class="card-body">
             <h5 class="card-title">This section is under construction.</h5>
             <p class="card-text">We're still setting up packages for email and consulting. Reach out to discuss your business's needs.</p>
           </div>
+        </div> -->
+
+        <div class="row align-items-end mb-3">
+          <div class="col-12 col-md-4 col-lg-3 offset-lg-1 pb-3">
+            <div class="badged-icon text-center text-md-end">
+              <i class="fa-sharp-duotone fa-regular fa-envelope fa-5x fa-color-primary"></i><br>
+              <div class="badge text-bg-primary">you@yourbusiness.com</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Custom Branded Address @yourbusiness</h3>
+                </div>
+                <div class="card-text">
+                  Say goodbye to that Gmail address, and Upgrade to a new account branded with your website! 
+                  Don't have a website yet? We'll work to find the perfect domain.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="row align-items-end">
+          <div class="col-12 col-md-4 col-lg-3 offset-lg-1 pb-3">
+            <div class="badged-icon text-center text-md-end">
+              <i class="fa-sharp-duotone fa-regular fa-building-lock fa-5x fa-color-primary"></i>
+              <!-- <div class="badge text-bg-primary">you@yourbusiness.com</div> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-lg-7 col-xl-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Available Enhanced Privacy to suit your Business's needs</h3>
+                </div>
+                <div class="card-text">
+                  Choose the privacy level that suits your needs. Full end-to-end encryption on select plans
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto" style="max-width: 1200px;">
+          <h4 class="mt-5 mb-3 text-center">Providers we offer</h4>
+          <div class="row justify-content-around">
+            <div class="provider col-6 col-lg-4 px-4 mb-4">
+
+              <div class="text-center mb-3">
+                <img class="provider-fastmail" src="assets/service-fastmail.png" alt="Fastmail">
+              </div>
+
+              <p class="text-center">
+                <strong>Rubi's Choice</strong><br>
+                Simple and Private
+              </p>
+
+              <div class="progress" role="progressbar" aria-label="Fastmail Familiarity" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 80%"></div>
+              </div>
+              Familiarity: 8/10
+              
+              <div class="progress" role="progressbar" aria-label="Fastmail Privacy" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 90%"></div>
+              </div>
+              Privacy: 9/10
+              
+              <div class="progress" role="progressbar" aria-label="Fastmail Features" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-warning" style="width: 50%"></div>
+              </div>
+              Features: 5/10
+
+              <div class="provider-features">
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-check text-success-emphasis"></i>
+                  Calendar
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-check text-success-emphasis"></i>
+                  File Storage
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-remove text-danger-emphasis"></i>
+                  Docs Suite
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-remove text-danger-emphasis"></i>
+                  End-to-End Encryption
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-remove text-danger-emphasis"></i>
+                  VPN Access
+                </div>
+
+                <div class="card border-info-subtle mt-3">
+                  <div class="card-body text-center fs-5">
+                    <strong>$50<sup>*</sup></strong>/user/yr<br>
+                    + $150 setup Fee
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="provider col-6 col-lg-4 px-4 mb-4">
+
+              <div class="text-center mb-3 fs-3 fw-bold">
+                <img class="provider-gmail" src="assets/service-gmail.webp" alt="Gmail"> Gmail
+              </div>
+
+              <p class="text-center">
+                <strong>Familiar and Feature-rich</strong><br>
+                Less Private, but easy to use
+              </p>
+
+              <div class="progress" role="progressbar" aria-label="Gmail Familiarity" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
+              </div>
+              Familiarity: 10/10
+              
+              <div class="progress" role="progressbar" aria-label="Gmail Privacy" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-danger" style="width: 30%"></div>
+              </div>
+              Privacy: 3/10
+              
+              <div class="progress" role="progressbar" aria-label="Gmail Features" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 90%"></div>
+              </div>
+              Features: 9/10
+
+              <div class="provider-features">
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-check text-success-emphasis"></i>
+                  Calendar
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-check text-success-emphasis"></i>
+                  File Storage
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-check text-success-emphasis"></i>
+                  Docs Suite
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-remove text-danger-emphasis"></i>
+                  End-to-End Encryption
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-remove text-danger-emphasis"></i>
+                  VPN Access
+                </div>
+
+                <div class="card border-info-subtle mt-3">
+                  <div class="card-body text-center fs-5">
+                    <strong>$67<sup>*</sup></strong>/user/yr<br>
+                    + $225 setup Fee
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="provider col-6 col-lg-4 px-4 mb-4">
+
+              <div class="text-center mb-3 fs-3 fw-bold">
+                <img class="provider-protonmail" src="assets/service-protonmail.svg" alt="ProtonMail">
+              </div>
+
+              <p class="text-center">
+                <strong>For the Privacy-minded</strong><br>
+                Fully encrypted and super secure
+              </p>
+
+              <div class="progress" role="progressbar" aria-label="ProtonMail Familiarity" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-warning" style="width: 50%"></div>
+              </div>
+              Familiarity: 5/10
+              
+              <div class="progress" role="progressbar" aria-label="ProtonMail Privacy" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
+              </div>
+              Privacy: 10/10
+              
+              <div class="progress" role="progressbar" aria-label="ProtonMail Features" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-success" style="width: 100%"></div>
+              </div>
+              Features: 10/10
+
+              <div class="provider-features">
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-check text-success-emphasis"></i>
+                  Calendar
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-check text-success-emphasis"></i>
+                  File Storage
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-dollar-sign text-warning-emphasis" data-bs-toggle="tooltip" data-bs-title="Available on select plans"></i>
+                  Docs Suite
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-check text-success-emphasis"></i>
+                  End-to-End Encryption
+                </div>
+
+                <div class="provider-feature">
+                  <i class="fa-sharp fa-solid fa-dollar-sign text-warning-emphasis" data-bs-toggle="tooltip" data-bs-title="Available on select plans"></i>
+                  VPN Access
+                </div>
+
+                <div class="card border-info-subtle mt-3">
+                  <div class="card-body text-center fs-5">
+                    <strong>$84<sup>*</sup></strong>/user/yr<br>
+                    + $250 setup Fee
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="text-center">
+                <i>* starting prices, final annual fee varies based on plan selected</i>
+              </div>
+          </div>
+        </div>
+
       </div>
       <div class="tab-pane fade" id="pills-consulting" role="tabpanel" aria-labelledby="pills-consulting-tab" tabindex="0">
-        <div class="card border-warning mb-3" style="max-width: 36rem;">
+        <div class="card border-warning mb-3" style="max-width: 42rem;">
           <div class="card-header"><i>Pardon Our Dust...</i></div>
           <div class="card-body">
+            <i class="fa-sharp-duotone fa-regular fa-person-digging fa-4x fa-color-warning float-start me-3 mt-2"></i>
             <h5 class="card-title">This section is under construction.</h5>
-            <p class="card-text">We're still setting up packages for email and consulting. Reach out to discuss your business's needs.</p>
+            <p class="card-text">We're still setting up packages and information for Software Consulting. Please reach out to discuss your business's needs.</p>
           </div>
         </div>
       </div>
@@ -121,5 +357,7 @@
     </footer>
 
   </div>
+
+  <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
