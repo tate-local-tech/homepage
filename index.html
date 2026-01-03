@@ -32,54 +32,77 @@
     </a>
     <a href="tel:+14044857525" class="btn btn-primary rounded-pill px-4 fs-4">404-485-7525</a>
 
-    <div class="row mt-4 mb-2 gx-2">
-      <div class="col-6 col-sm-4 col-lg-3 mb-2 d-flex">
-        <div class="card flex-grow-1 service-card text-bg-info">
-          <div class="card-body text-center">
-            <i class="fa-sharp-duotone fa-regular fa-globe-pointer"></i>
-            <div class="mt-2 fs-5">Web Design Services</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-lg-3 mb-2 d-flex">
-        <div class="card flex-grow-1 service-card text-bg-info">
-          <div class="card-body text-center">
-            <i class="fa-sharp-duotone fa-regular fa-mailbox-open-letter"></i>
-            <div class="mt-2 fs-5">Business Email Hosting</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-lg-3 mb-2 d-flex">
-        <div class="card flex-grow-1 service-card text-bg-info">
-          <div class="card-body text-center">
-            <i class="fa-sharp-duotone fa-regular fa-cloud"></i>
-            <div class="mt-2 fs-5">Software Consulting</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <ul class="nav nav-pills mt-4 mb-2 d-flex justify-content-between" id="pills-tab" role="tablist">
+      <li class="nav-item mb-2 d-flex flex-fill" role="presentation">
+        <button class="nav-link active text-center service-pill w-100 py-3" id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button" role="tab" aria-controls="pills-web" aria-selected="true">
+          <i class="fa-sharp-duotone fa-regular fa-globe-pointer"></i>
+          <div class="mt-2 fs-5">Web Design Services</div>
+        </button>
+      </li>
+      <li class="nav-item mb-2 d-flex flex-fill" role="presentation">
+        <button class="nav-link service-pill py-3 w-100" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email" aria-selected="false">
+          <i class="fa-sharp-duotone fa-regular fa-mailbox-open-letter"></i>
+          <div class="mt-2 fs-5">Business Email Hosting</div>
+        </button>
+      </li>
+      <li class="nav-item mb-2 d-flex flex-fill" role="presentation">
+        <button class="nav-link service-pill py-3 w-100" id="pills-consulting-tab" data-bs-toggle="pill" data-bs-target="#pills-consulting" type="button" role="tab" aria-controls="pills-consulting" aria-selected="false">
+          <i class="fa-sharp-duotone fa-regular fa-server"></i>
+          <div class="mt-2 fs-5">Software Consulting</div>
+        </button>
+      </li>
+    </ul>
   </div>
 
   <div class="container-fluid">
 
-    <div class="row gx-2" data-masonry='{"percentPosition": true }'>
-      
-      <div class="col-6 col-lg-4 mb-2">
-        <a class="card" href="https://hopefromearth.com" target="_blank" rel="noopener noreferrer">
-          <img src="assets/pfo-hope-earth.png" alt="Hope From Earth" class="card-img-top">
+    <div class="tab-content border-0 p-0 mb-5" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab" tabindex="0">
+        <a href="https://pros.squarespace.com/blog/work-with-a-circle-member">
+          <img src="assets/squarespace.png" class="img-fluid float-start" style="max-width: 210px;">
         </a>
-      </div>
-      <div class="col-6 col-lg-4 mb-2">
-        <a class="card" href="https://hopefromearth.com/coaching" target="_blank" rel="noopener noreferrer">
-          <img src="assets/pfo-hope-earth-coaching.png" alt="Hope From Earth">
-        </a>
-      </div>
-      <div class="col-6 col-lg-4 mb-2">
-        <a class="card" href="https://comingbacktohope.com" target="_blank" rel="noopener noreferrer">
-          <img src="assets/pfo-hope-practice.png" alt="Coming Back to Hope">
-        </a>
-      </div>
+        <p class="fs-5 pt-1">
+        <strong>Squarespace Web Design Services</strong><br>
+        Starting at $500
+        </p>
+        <div class="row gx-2">
+          
+          <div class="col-6 col-lg-4 mb-2">
+            <a class="card" href="https://hopefromearth.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/pfo-hope-earth.png" alt="Hope From Earth" class="card-img-top">
+            </a>
+          </div>
+          <div class="col-6 col-lg-4 mb-2">
+            <a class="card" href="https://hopefromearth.com/coaching" target="_blank" rel="noopener noreferrer">
+              <img src="assets/pfo-hope-earth-coaching.png" alt="Hope From Earth">
+            </a>
+          </div>
+          <div class="col-6 col-lg-4 mb-2">
+            <a class="card" href="https://comingbacktohope.com" target="_blank" rel="noopener noreferrer">
+              <img src="assets/pfo-hope-practice.png" alt="Coming Back to Hope">
+            </a>
+          </div>
 
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabindex="0">
+        <div class="card border-warning mb-3" style="max-width: 36rem;">
+          <div class="card-header"><i>Pardon Our Dust...</i></div>
+          <div class="card-body">
+            <h5 class="card-title">This section is under construction.</h5>
+            <p class="card-text">We're still setting up packages for email and consulting. Reach out to discuss your business's needs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-consulting" role="tabpanel" aria-labelledby="pills-consulting-tab" tabindex="0">
+        <div class="card border-warning mb-3" style="max-width: 36rem;">
+          <div class="card-header"><i>Pardon Our Dust...</i></div>
+          <div class="card-body">
+            <h5 class="card-title">This section is under construction.</h5>
+            <p class="card-text">We're still setting up packages for email and consulting. Reach out to discuss your business's needs.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="mb-3">
